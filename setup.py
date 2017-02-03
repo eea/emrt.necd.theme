@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.34'
+version = '1.60.00'
 
-setup(name='esdrt.theme',
+setup(name='emrt.necd.theme',
       version=version,
-      description="Installable theme: esdrt.theme",
+      description="Installable theme: emrt.necd.theme",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
@@ -17,10 +17,10 @@ setup(name='esdrt.theme',
       keywords='',
       author='Mikel Santamaria',
       author_email='msantamaria@bilbomatica.es',
-      url='https://github.com/eea/esdrt.theme/',
+      url='https://github.com/eea/emrt.necd.theme/',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['esdrt'],
+      namespace_packages=['emrt', 'emrt.necd'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
@@ -29,7 +29,7 @@ setup(name='esdrt.theme',
           'z3c.jbot',
           'five.grok',
           'eea.icons',
-          'esdrt.content',
+          'emrt.necd.content',
           'Products.Collage',
           'eea.controlpanel',
       ],

@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.34 (unreleased)
+1.60.00 (unreleased)
 -----------------
 
-- Nothing changed yet.
-
+- emrt.necd.theme fork
+  [batradav]
 
 1.33 (2017-01-25)
 -----------------
