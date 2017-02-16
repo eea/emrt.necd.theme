@@ -4,7 +4,9 @@ Changelog
 2.0 (2017-02-16)
 ----------------
 
-- emrt.necd.theme fork
+- Task #82126 Cleanup the code in order to eliminate Step1
+  emrt.necd.theme fork - replaced all esdrt.content instances with
+  emrt.necd.theme, now depends on emrt.necd.content.
   [batradav]
 
 1.33 (2017-01-25)
