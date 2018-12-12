@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 import os
 
-version = '2.0.1'
+VERSION = '2.0.2'
 
 setup(name='emrt.necd.theme',
-      version=version,
+      version=VERSION,
       description="Installable theme: emrt.necd.theme",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
