@@ -27,7 +27,6 @@ setup(name='emrt.necd.theme',
           # -*- Extra requirements: -*-
           'setuptools',
           'z3c.jbot',
-          'five.grok',
           'eea.icons',
           'emrt.necd.content',
           'Products.Collage',
