@@ -2,6 +2,13 @@ Changelog
 =========
 
 
+2.0.3 (2019-05-13)
+------------------
+
+- Bug #105255 - Dependency cleanup for plone-based image
+  [batradav]
+
+
 2.0.2 (2018-12-12)
 ------------------
 
