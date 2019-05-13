@@ -31,7 +31,6 @@ setup(name='emrt.necd.theme',
           'eea.icons',
           'emrt.necd.content',
           'Products.Collage',
-          'eea.controlpanel',
       ],
       entry_points="""
       # -*- Entry points: -*-
