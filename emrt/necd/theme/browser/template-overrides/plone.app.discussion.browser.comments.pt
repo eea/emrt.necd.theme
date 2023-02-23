@@ -53,25 +53,37 @@
                     <tal:posted i18n:translate="label_says">says:</tal:posted>
                     <div class="commentDate"
                          tal:content="python:reply.modification_date.strftime('%d %b %Y, %H:%M CET')">
-                         8/23/2001 12:40:44 
+                         8/23/2001 12:40:44
                     </div>
                 </div>
 
-                <div class="files" tal:condition="reply/attachment|nothing">
-                  <div class="file">
-                    <span class="eea-icon eea-icon-lg attachment" tal:attributes="class string: eea-icon eea-icon-lg attachment"></span>
-                    <a
-                       tal:content="reply/attachment/filename"
-                       tal:attributes="href string:${reply/absolute_url}/@@download/attachment/${reply/attachment/filename}">
-                        Attachment
-                    </a>
-                    <a href=""
-                       tal:condition="here/can_add_files|nothing"
-                       tal:attributes="href string:${reply/absolute_url}/@@copy-attachment-to-answer">
-                       Copy file to query
-                    </a>
+                <tal:attachments tal:define="single_attachment reply/attachment|nothing; multi_attachments reply/attachments|nothing">
+                  <div class="files" tal:condition="python:single_attachment or multi_attachments">
+                    <div class="file" tal:condition="single_attachment">
+                      <span class="eea-icon eea-icon-lg attachment" tal:attributes="class string: eea-icon eea-icon-lg attachment"></span>
+                      <a
+                         tal:content="reply/attachment/filename"
+                         tal:attributes="href string:${reply/absolute_url}/@@download/attachment/${reply/attachment/filename}">
+                          Attachment
+                      </a>
+                      <a href=""
+                         tal:condition="here/can_add_files|nothing"
+                         tal:attributes="href string:${reply/absolute_url}/@@copy-attachment-to-answer">
+                         Copy file to query
+                      </a>
+                    </div>
                   </div>
-                </div>
+                  <tal:multifiles tal:condition="multi_attachments">
+                      <span class="file" tal:repeat="attachment reply/attachments">
+                        <span class="eea-icon eea-icon-lg attachment" tal:attributes="class string: eea-icon eea-icon-lg attachment"></span>
+                        <a
+                           tal:content="attachment/filename"
+                           tal:attributes="href string:${reply/absolute_url}/@@multi-download?index=${python:repeat['attachment'].index}">
+                            Attachment
+                        </a>
+                      </span>
+                  </tal:multifiles>
+                </tal:attachments>
 
                 <div class="commentBody">
 
