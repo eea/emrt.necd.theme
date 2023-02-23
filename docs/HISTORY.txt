@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.0.4 (2023-02-23)
+------------------
+
+- Bug #142227 - Counterpart can upload multiple files
+  [batradav]
+
 
 2.0.3 (2019-05-13)
 ------------------
