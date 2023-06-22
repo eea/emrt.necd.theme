@@ -31,7 +31,6 @@ setup(
         # -*- Extra requirements: -*-
         "setuptools",
         "z3c.jbot",
-        "eea.icons",
         "emrt.necd.content",
     ],
     entry_points="""

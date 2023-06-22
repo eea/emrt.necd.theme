@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<registry>
+  <records
+    prefix="plone.bundles/emrt-necd-theme"
+    interface="plone.base.interfaces.resources.IBundleRegistry">
+    <value key="enabled">True</value>
+    <value key="jscompilation">++resource++emrt.necd.theme/emrt.necd.theme.js</value>
+    <value key="csscompilation">++resource++emrt.necd.theme/emrt.necd.theme.css</value>
+    <value key="last_compilation"></value>
+    <value key="compile">False</value>
+    <value key="depends"></value>
+  </records>
+</registry>
