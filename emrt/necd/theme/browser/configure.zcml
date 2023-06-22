@@ -20,20 +20,7 @@
     <browser:jbot
         directory="template-overrides"
         layer=".interfaces.IThemeSpecific" />
-    <browser:viewlet
-        name="plone.logo"
-        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-        layer=".interfaces.IThemeSpecific"
-        class=".viewlets.LogoViewlet"
-        permission="zope.Public"
-        />
-    <browser:viewlet
-        name="plone.footer"
-        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
-        layer=".interfaces.IThemeSpecific"
-        class=".viewlets.FooterViewlet"
-        permission="zope.Public"
-        />
+
     <browser:viewlet
         name="plone.personal_bar"
         manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
@@ -41,11 +28,20 @@
         class=".viewlets.PersonalBarViewlet"
         permission="zope.Public"
         />
-    <!--browser:viewlet
-        name="emrt.necd.productversion"
-        manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
-        class=".viewlets.ProductVersionViewlet"
-        permission="zope.Public"
-        template="templates/product_version.pt"
-        /-->
+
+    <configure package="plone.app.layout.viewlets">
+        <browser:viewletManager
+            name="plone.toolbar"
+            provides=".interfaces.IToolbar"
+            class="emrt.necd.theme.browser.toolbar.ToolbarViewletManager"
+            layer=".interfaces.IThemeSpecific"
+            permission="zope2.View"
+            />
+    </configure>
+
+    <browser:resourceDirectory
+        name="emrt.necd.theme"
+        directory="static"
+        />
+
 </configure>
