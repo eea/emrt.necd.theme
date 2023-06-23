@@ -3,7 +3,7 @@
     <h1 tal:content="view/navigation_root_title"></h1>
     <div id="eea-logo-holder">
       <a href="http://www.eea.europa.eu/" target="_blank" title="European Environment Agency">
-        <img src="{view/navigation_root_url}/++resource++emrt.necd.theme/eea.gif" alt="European Environment Agency"/>
+        <img src="{view/navigation_root_url}/++resource++emrt.necd.theme.resources/eea.gif" alt="European Environment Agency"/>
       </a>
     </div>
   </div>

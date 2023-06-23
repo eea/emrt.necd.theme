@@ -33,7 +33,12 @@
 
     <browser:resourceDirectory
         name="emrt.necd.theme"
-        directory="static"
+        directory="static/dist"
+        />
+
+    <browser:resourceDirectory
+        name="emrt.necd.theme.resources"
+        directory="static/resources"
         />
 
 </configure>

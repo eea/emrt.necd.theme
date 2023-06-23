@@ -28,7 +28,7 @@ parts/
 dist/
 var/
 .vscode/
-
+__pycache__/
 
 # OSX
 .DS_Store

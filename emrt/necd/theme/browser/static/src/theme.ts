@@ -1,3 +1,5 @@
+import * as moment from "moment";
+
 function hightlight_restructured(){
     if ($("body").hasClass("template-emrt-necd-content-observation") ||
         $("body").hasClass("template-emrt-necd-content-conclusion") ||
