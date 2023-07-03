@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <version>3000</version>
+  <dependencies>
+        <dependency>profile-emrt.necd.content:default</dependency>
+  </dependencies>
+</metadata>

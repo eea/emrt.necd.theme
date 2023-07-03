@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<registry
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="emrt.necd.theme">
+  <records
+    prefix="plone.bundles/emrt-necd-theme"
+    interface="plone.base.interfaces.resources.IBundleRegistry">
+    <value key="enabled">True</value>
+    <value key="jscompilation">++resource++emrt.necd.theme/emrt.necd.theme.min.js</value>
+    <value key="csscompilation">++resource++emrt.necd.theme/emrt.necd.theme.min.css</value>
+    <value key="last_compilation"></value>
+    <value key="compile">False</value>
+    <value key="depends">plone</value>
+  </records>
+</registry>
