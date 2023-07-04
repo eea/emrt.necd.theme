@@ -95,6 +95,7 @@ $enable-roboto-webfont: false !default;
 @import "@plone/plonetheme-barceloneta-base/scss/print";
 
 // @import "@plone/plonetheme-barceloneta-base/scss/roboto-webfont";
+@import "bootstrap-icons/font/bootstrap-icons.css";
 
 
 // 9. Add additional custom code here

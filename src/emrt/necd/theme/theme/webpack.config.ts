@@ -5,7 +5,7 @@ import * as path from "path";
 
 const config: Configuration = {
   entry: {
-    "emrt.necd.theme": ["./src/theme.ts", "./src/scss/theme.scss"],
+    theme: ["./src/theme.ts", "./src/scss/theme.scss"],
   },
   devtool: "source-map",
   module: {

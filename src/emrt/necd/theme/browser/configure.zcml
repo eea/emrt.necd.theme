@@ -21,16 +21,6 @@
       />
   </configure>
 
-  <browser:resourceDirectory
-      name="emrt.necd.theme"
-      directory="static/dist"
-      />
-
-  <browser:resourceDirectory
-      name="emrt.necd.theme.resources"
-      directory="static/resources"
-      />
-
   <!-- Publish static files -->
   <plone:static
       name="emrt.necd.theme"
