@@ -160,6 +160,7 @@ body {
 .commentBody p {
 	margin-bottom: 0px !important;
 	padding-top: 5px;
+	float: none;
 }
 .question div.field,
 .question div.field div {

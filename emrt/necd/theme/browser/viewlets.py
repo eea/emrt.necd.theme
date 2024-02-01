@@ -1,5 +1,7 @@
 from plone import api
 from plone.app.layout.viewlets import common
+from plone.app.textfield.value import RichTextValue
+from plone.app.discussion.browser.comments import CommentsViewlet
 from Products.CMFCore.utils import getToolByName
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
@@ -157,6 +159,17 @@ class PersonalBarViewlet(common.PersonalBarViewlet):
             return "United Kingdom"
         else:
             return countryCode
+
+class NECDCommentsViewlet(CommentsViewlet):
+
+    index = ViewPageTemplateFile("templates/comments.pt")
+
+    def render_rich_text_reply(self, reply):
+        if isinstance(reply.text, RichTextValue):
+            return reply.text.output_relative_to(self.context)
+        else:
+            return reply.getText()
+
 
 #class ProductVersionViewlet(common.ViewletBase):
     #"""A viewlet which informs about the Product versions

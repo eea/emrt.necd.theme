@@ -88,7 +88,7 @@
                 <div class="commentBody">
 
 
-                    <span tal:replace="structure reply/getText" />
+                    <span tal:replace="structure python:view.render_rich_text_reply(reply)" />
 
                     <div class="commentActions">
                         <form name="delete"
