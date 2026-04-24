@@ -15,7 +15,7 @@ long_description = "\n\n".join(
 
 setup(
     name="emrt.necd.theme",
-    version="3.0.0",
+    version="3.0.1",
     description="Installable theme: emrt.necd.theme",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
@@ -67,10 +67,10 @@ setup(
             "plone.app.robotframework[debug]",
         ],
     },
-    entry_points="""
-    [z3c.autoinclude.plugin]
-    target = plone
-    [console_scripts]
-    update_locale = emrt.necd.theme.locales.update:update_locale
-    """,
+    entry_points={
+        "plone.autoinclude.plugin": [
+            "target = plone",
+            "module = emrt.necd.theme",
+        ],
+    },
 )
