@@ -6,6 +6,11 @@ Changelog
 
 - Migrate to Plone 6 and Python 3.11
 
+2.0.5.1 (2023-02-23)
+--------------------
+
+- Feature #260973 - Add formatting
+  [batradav]
 
 2.0.4 (2023-02-23)
 ------------------
