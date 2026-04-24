@@ -15,7 +15,7 @@ long_description = "\n\n".join(
 
 setup(
     name="emrt.necd.theme",
-    version="3.0.0dev0",
+    version="3.0.0",
     description="Installable theme: emrt.necd.theme",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
