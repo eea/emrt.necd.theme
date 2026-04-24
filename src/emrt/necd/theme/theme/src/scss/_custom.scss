@@ -1,0 +1,51 @@
+#portal-logo img {
+    width: 128px;
+}
+
+#portal-footer-wrapper {
+    background: linear-gradient(to top, $primary, $secondary);
+}
+
+.navbar-barceloneta,
+#portal-globalnav-wrapper {
+    background: linear-gradient(to top, $primary, $secondary);
+    .navbar-nav li {
+        background: linear-gradient(to top, $primary, $secondary);
+    }
+}
+
+#content-header #portal-anontools,
+#content-header #portal-siteactions {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  li {
+    padding: 0.5rem;
+  }
+}
+
+
+body.portaltype-reviewfolder,
+body.portaltype-conclusions,
+body.portaltype-observation {
+  #plone-contentmenu-display,
+  #plone-contentmenu-portletmanager,
+  #contentview-history,
+  #contentview-local_roles,
+  #contentview-folderContents,
+  #contentview-view,
+  #plone-contentmenu-factories,
+  #plone-contentmenu-actions .dropdown-menu a:not(.actionicon-object_buttons-delete) {
+    display: none;
+  }
+}
+body.portaltype-conclusions,
+body.portaltype-observation {
+  #plone-contentmenu-workflow {
+    display: none;
+  }
+}

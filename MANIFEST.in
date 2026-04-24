@@ -1,7 +1,7 @@
-recursive-include emrt *
-global-exclude *pyc
-include *.in
-include *.txt
-include *.zcml
-recursive-include docs *.GPL
-recursive-include docs *.txt
+graft src/emrt.necd
+graft docs
+include *.rst
+exclude tox.ini
+exclude *.txt
+exclude .gitlab-ci.yml
+global-exclude *.pyc
